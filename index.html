@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <style>
+
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      var socket = io();
+      socket.on('chat message', function(msg){
+          document.getElementById('image').setAttribute('src', "data:image/png;base64,"+msg)
+          console.log(msg)
+        });
+    </script>
+  </head>
+  <body>
+    <ul id="messages">
+
+    </ul>
+    <img src="" id="image" alt="" width="100%" height="100%">
+  </body>
+</html>
