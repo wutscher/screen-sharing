@@ -13,6 +13,6 @@
     "desktop-screenshot": "^0.1.1",
     "express": "^4.16.4",
     "screenshot-desktop": "^1.6.0",
-    "socket.io": "^2.2.0"
+    "socket.io": "^2.5.0"
   }
 }
